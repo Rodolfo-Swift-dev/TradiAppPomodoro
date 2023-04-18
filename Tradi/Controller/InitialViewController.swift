@@ -11,14 +11,8 @@ import Lottie
 
 class InitialViewController : UIViewController {
     
-    
-
-    
-  
-    
     @IBOutlet weak var animationView: LottieAnimationView!
-    
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
