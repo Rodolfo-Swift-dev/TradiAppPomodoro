@@ -1,0 +1,24 @@
+PODS:
+  - CLTypingLabel (0.4.0)
+  - HGCircularSlider (2.2.0)
+  - lottie-ios (4.1.3)
+
+DEPENDENCIES:
+  - CLTypingLabel
+  - HGCircularSlider
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - CLTypingLabel
+    - HGCircularSlider
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  CLTypingLabel: 95a7d1faf7e3d1d952cd11cb0491d17d80c50934
+  HGCircularSlider: afb1942743a2df156dcc7a3500216e523e14266b
+  lottie-ios: d0954d3150061f662ed0adf96ef98d7421864c47
+
+PODFILE CHECKSUM: b25199855276d697f3d9f970dda5d97feb31a0af
+
+COCOAPODS: 1.12.0

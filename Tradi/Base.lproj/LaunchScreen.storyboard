@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3r2-Is-fjl">
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IE3-co-8td">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="269.66666666666669"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZX-dB-AwQ">
+                                        <rect key="frame" x="0.0" y="284.66666666666663" width="430" height="269.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="1b6-cZ-cIh">
+                                                <rect key="frame" x="10" y="9.9999999999999858" width="410" height="249.66666666666663"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0009509597378277154" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1b6-cZ-cIh" secondAttribute="bottom" constant="10" id="DLA-Tv-PaI"/>
+                                            <constraint firstItem="1b6-cZ-cIh" firstAttribute="leading" secondItem="DZX-dB-AwQ" secondAttribute="leading" constant="10" id="EfA-HN-lcZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="1b6-cZ-cIh" secondAttribute="trailing" constant="10" id="KqL-cU-B7U"/>
+                                            <constraint firstItem="1b6-cZ-cIh" firstAttribute="top" secondItem="DZX-dB-AwQ" secondAttribute="top" constant="10" id="OqF-hR-0yh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3En-iu-DY5">
+                                        <rect key="frame" x="0.0" y="569.33333333333337" width="430" height="269.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tradi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fNe-nV-ewW">
+                                                <rect key="frame" x="188" y="20" width="54.333333333333343" height="29.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fNe-nV-ewW" firstAttribute="centerX" secondItem="3En-iu-DY5" secondAttribute="centerX" id="MaY-wI-FHs"/>
+                                            <constraint firstItem="fNe-nV-ewW" firstAttribute="top" secondItem="3En-iu-DY5" secondAttribute="top" constant="20" id="x5C-KC-xzw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3En-iu-DY5" firstAttribute="leading" secondItem="3r2-Is-fjl" secondAttribute="leading" id="0Au-C2-RIG"/>
+                                    <constraint firstItem="IE3-co-8td" firstAttribute="top" secondItem="3r2-Is-fjl" secondAttribute="top" id="NGy-HT-uRb"/>
+                                    <constraint firstItem="IE3-co-8td" firstAttribute="leading" secondItem="3r2-Is-fjl" secondAttribute="leading" id="Nhu-i3-ur1"/>
+                                    <constraint firstAttribute="bottom" secondItem="3En-iu-DY5" secondAttribute="bottom" id="aZr-pm-yjM"/>
+                                    <constraint firstItem="DZX-dB-AwQ" firstAttribute="leading" secondItem="3r2-Is-fjl" secondAttribute="leading" id="cR2-Ut-veb"/>
+                                    <constraint firstAttribute="trailing" secondItem="3En-iu-DY5" secondAttribute="trailing" id="hHM-1u-A9D"/>
+                                    <constraint firstAttribute="trailing" secondItem="DZX-dB-AwQ" secondAttribute="trailing" id="hcK-n8-Myn"/>
+                                    <constraint firstAttribute="trailing" secondItem="IE3-co-8td" secondAttribute="trailing" id="pCi-xe-oLa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3r2-Is-fjl" secondAttribute="bottom" id="NFz-pW-jUT"/>
+                            <constraint firstAttribute="trailing" secondItem="3r2-Is-fjl" secondAttribute="trailing" id="nmh-L3-yzR"/>
+                            <constraint firstItem="3r2-Is-fjl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pW8-rE-LtD"/>
+                            <constraint firstItem="3r2-Is-fjl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="pYb-bn-eGE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appstore" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>
