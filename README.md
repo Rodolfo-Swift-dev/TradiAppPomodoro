@@ -55,3 +55,8 @@ Interfaz adaptada para iPAD y iOS con orientaciones:
 -----------
 ### Desarrollador iOS Jr.
 ### En mi perfil de GitHub tienes más información.
+![Simulator Screen Shot - iPhone 14 Pro - 2023-04-18 at 00 56 31](https://user-images.githubusercontent.com/104182764/232951175-bbea441e-3753-4918-96d1-64c8c4a46b46.png)
+
+![Simulator Screen Shot - iPad Pro (12 9-inch) (6th generation) - 2023-04-18 at 00 58 50](https://user-images.githubusercontent.com/104182764/232951109-bd3f1953-241d-4842-8326-79412083f49c.png)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-04-18 at 00 57 03](https://user-images.githubusercontent.com/104182764/232951220-c94c4c56-77bc-4813-95c8-c869a4ae4f49.png)
+![Simulator Screen Shot - iPad Pro (12 9-inch) (6th generation) - 2023-04-18 at 00 59 06](https://user-images.githubusercontent.com/104182764/232951244-bc863170-9067-4115-b928-476d3fa66ab1.png)
