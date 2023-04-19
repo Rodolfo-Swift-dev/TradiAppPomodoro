@@ -10,9 +10,9 @@ Interfaz adaptada para iPAD y iOS con orientaciones:
 ### Requisitos mínimos
 -----------
 
-![Swift 5.4.2](https://swift.org)
-![Xcode 13.0](https://developer.apple.com/xcode)
-![iOS 16.0](https://www.apple.com/es/ios)
+SWIFT 5.4.2
+XCODE 13.0
+iOS 16.0
 
  -----------
 * Clona el proyecto
