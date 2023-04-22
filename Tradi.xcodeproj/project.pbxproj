@@ -10,6 +10,7 @@
 		76CE0339BCD1DE0807E9B327 /* Pods_Tradi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC7FE7DC96F373F90E88DD2 /* Pods_Tradi.framework */; };
 		BC2F603129EDEC1400B8D164 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F603029EDEC1400B8D164 /* AppUtility.swift */; };
 		BC2F603329EDF1BA00B8D164 /* 116177-time-tracker.json in Resources */ = {isa = PBXBuildFile; fileRef = BC2F603229EDF1BA00B8D164 /* 116177-time-tracker.json */; };
+		BC75DBC429F2422A00927CFE /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75DBC329F2422A00927CFE /* MotionManager.swift */; };
 		BC7FDAD229E92BA800F2E41B /* CronoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7FDAD129E92BA800F2E41B /* CronoViewController.swift */; };
 		BCB5D82229E6296F00AE5E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB5D82129E6296F00AE5E8B /* AppDelegate.swift */; };
 		BCB5D82429E6296F00AE5E8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB5D82329E6296F00AE5E8B /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 		BCB5D82929E6296F00AE5E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB5D82729E6296F00AE5E8B /* Main.storyboard */; };
 		BCB5D82B29E6297100AE5E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB5D82A29E6297100AE5E8B /* Assets.xcassets */; };
 		BCB5D82E29E6297100AE5E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB5D82C29E6297100AE5E8B /* LaunchScreen.storyboard */; };
+		BCF0E7DE29F422A9000FFC38 /* MotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		BAC7FE7DC96F373F90E88DD2 /* Pods_Tradi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2F603029EDEC1400B8D164 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		BC2F603229EDF1BA00B8D164 /* 116177-time-tracker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "116177-time-tracker.json"; sourceTree = "<group>"; };
+		BC75DBC329F2422A00927CFE /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		BC7FDAD129E92BA800F2E41B /* CronoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoViewController.swift; sourceTree = "<group>"; };
 		BCB5D81E29E6296F00AE5E8B /* Tradi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB5D82129E6296F00AE5E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		BCB5D82A29E6297100AE5E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB5D82D29E6297100AE5E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB5D82F29E6297100AE5E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionModel.swift; sourceTree = "<group>"; };
 		FEDEC5C8EC76E71770AFE15B /* Pods-Tradi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradi.debug.xcconfig"; path = "Target Support Files/Pods-Tradi/Pods-Tradi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				BC2F603029EDEC1400B8D164 /* AppUtility.swift */,
+				BC75DBC329F2422A00927CFE /* MotionManager.swift */,
+				BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB5D82629E6296F00AE5E8B /* InitialViewController.swift in Sources */,
+				BCF0E7DE29F422A9000FFC38 /* MotionModel.swift in Sources */,
 				BCB5D82229E6296F00AE5E8B /* AppDelegate.swift in Sources */,
 				BC2F603129EDEC1400B8D164 /* AppUtility.swift in Sources */,
+				BC75DBC429F2422A00927CFE /* MotionManager.swift in Sources */,
 				BC7FDAD229E92BA800F2E41B /* CronoViewController.swift in Sources */,
 				BCB5D82429E6296F00AE5E8B /* SceneDelegate.swift in Sources */,
 			);
