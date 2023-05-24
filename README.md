@@ -24,7 +24,7 @@ Interfaz adaptada para iPAD y iOS con orientaciones:
 
 * SWIFT 5.4.2
 * XCODE 13.0
-* iOS 16.0
+* iOS 13.0
 
  
  ### Tecnologias
