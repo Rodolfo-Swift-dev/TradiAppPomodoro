@@ -31,7 +31,7 @@ Interfaz adaptada para iPAD y iOS con orientaciones:
   -----------
 
  * cocoaPods
-    * pod 'CLTypingLabel'
+   
     * pod 'HGCircularSlider'
     * pod 'lottie-ios'
  * coreMotion
