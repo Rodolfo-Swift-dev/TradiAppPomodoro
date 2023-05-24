@@ -7,12 +7,19 @@
 
 import UIKit
 import HGCircularSlider
+import CoreMotion
 
 
 
 class CronoViewController: UIViewController {
 
+    var motionManager = MotionManager()
+    var pitchValue : Double = 0.0
+    var yawValue : Double = 0.0
+    var rollValue : Double = 0.0
+    
     var minutes : Int = 0
+    
     var seconds : Int = 0
     var totalTime : Int = 0
     let secondsPerMinute = 60
@@ -23,15 +30,30 @@ class CronoViewController: UIViewController {
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var circularView: CircularSlider!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppUtility.lockOrinetation(.portrait)
+        motionManager.proob()
+        print(self.pitchValue)
+        print(self.yawValue)
+        print(self.rollValue)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //
+        motionManager.delegate = self
         circularView.minimumValue = 0.0
         circularView.maximumValue = 1.0
         circularView.endPointValue = 0.2
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppUtility.lockOrinetation(.all)
+    }
     
     @IBAction func selectMode(_ sender: UIButton) {
         timer.invalidate()
@@ -112,3 +134,24 @@ class CronoViewController: UIViewController {
     
 
 }
+
+extension CronoViewController : MotionManagerDelegate{
+    
+    func didUpdateMotion(_ motionManager: MotionManager, motion: MotionModel) {
+        
+        DispatchQueue.main.async {
+            self.pitchValue = motion.data.pitch
+            self.yawValue = motion.data.yaw
+            self.rollValue = motion.data.row
+            print(self.pitchValue)
+            print(self.yawValue)
+            print(self.rollValue)
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+    
+}
+

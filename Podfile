@@ -1,11 +1,11 @@
- platform :ios, '16.0'
+ platform :ios, '13.0'
 
 target 'Tradi' do
   
   use_frameworks!
 
   # Pods for Tradi
-pod 'CLTypingLabel'
+
 pod 'HGCircularSlider'
 pod 'lottie-ios'
 

@@ -19,6 +19,7 @@ class MotionManager{
     let motionManager = CMMotionManager()
     let motionQuehue = OperationQueue()
     
+    
     func proob(){
         motionManager.startDeviceMotionUpdates ( to: motionQuehue ) { (data :  CMDeviceMotion?, error : Error?) in
             guard let data = data else{
@@ -27,9 +28,8 @@ class MotionManager{
                 return
             }
             let motionData = data
-                
-                let motionModel = MotionModel.init(data: Data(pitch: motionData.attitude.pitch, yaw: motionData.attitude.yaw, row: motionData.attitude.roll))
-            self.motionManager.deviceMotionUpdateInterval = 1
+            let motionModel = MotionModel(data: Data(pitch: motionData.attitude.pitch, yaw: motionData.attitude.yaw, row: motionData.attitude.roll))
+            self.motionManager.deviceMotionUpdateInterval = 0.5
             self.delegate?.didUpdateMotion(self, motion : motionModel)
             
         }

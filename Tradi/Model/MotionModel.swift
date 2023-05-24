@@ -16,6 +16,11 @@ struct Data {
     let pitch : Double
     let yaw : Double
     let row : Double
+    init(pitch: Double, yaw: Double, row: Double) {
+        self.pitch = pitch
+        self.yaw = yaw
+        self.row = row
+    }
 }
 
 
