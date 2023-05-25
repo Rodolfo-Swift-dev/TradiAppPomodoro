@@ -13,6 +13,7 @@ protocol MotionManagerDelegate {
     func didFailWithError( error: Error)
     
 }
+
 class MotionManager{
     
     var delegate : MotionManagerDelegate?

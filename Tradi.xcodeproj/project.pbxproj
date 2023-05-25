@@ -18,6 +18,8 @@
 		BCB5D82929E6296F00AE5E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB5D82729E6296F00AE5E8B /* Main.storyboard */; };
 		BCB5D82B29E6297100AE5E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB5D82A29E6297100AE5E8B /* Assets.xcassets */; };
 		BCB5D82E29E6297100AE5E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB5D82C29E6297100AE5E8B /* LaunchScreen.storyboard */; };
+		BCE39FC72A1E67A500B72A95 /* CronoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE39FC62A1E67A500B72A95 /* CronoManager.swift */; };
+		BCE39FC92A1E750300B72A95 /* CronoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE39FC82A1E750300B72A95 /* CronoModel.swift */; };
 		BCF0E7DE29F422A9000FFC38 /* MotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		BCB5D82A29E6297100AE5E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB5D82D29E6297100AE5E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB5D82F29E6297100AE5E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE39FC62A1E67A500B72A95 /* CronoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoManager.swift; sourceTree = "<group>"; };
+		BCE39FC82A1E750300B72A95 /* CronoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoModel.swift; sourceTree = "<group>"; };
 		BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionModel.swift; sourceTree = "<group>"; };
 		FEDEC5C8EC76E71770AFE15B /* Pods-Tradi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradi.debug.xcconfig"; path = "Target Support Files/Pods-Tradi/Pods-Tradi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,8 @@
 				BC2F603029EDEC1400B8D164 /* AppUtility.swift */,
 				BC75DBC329F2422A00927CFE /* MotionManager.swift */,
 				BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */,
+				BCE39FC62A1E67A500B72A95 /* CronoManager.swift */,
+				BCE39FC82A1E750300B72A95 /* CronoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB5D82629E6296F00AE5E8B /* InitialViewController.swift in Sources */,
+				BCE39FC72A1E67A500B72A95 /* CronoManager.swift in Sources */,
 				BCF0E7DE29F422A9000FFC38 /* MotionModel.swift in Sources */,
 				BCB5D82229E6296F00AE5E8B /* AppDelegate.swift in Sources */,
+				BCE39FC92A1E750300B72A95 /* CronoModel.swift in Sources */,
 				BC2F603129EDEC1400B8D164 /* AppUtility.swift in Sources */,
 				BC75DBC429F2422A00927CFE /* MotionManager.swift in Sources */,
 				BC7FDAD229E92BA800F2E41B /* CronoViewController.swift in Sources */,
