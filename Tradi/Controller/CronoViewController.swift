@@ -28,8 +28,8 @@ class CronoViewController: UIViewController {
         
         super.viewWillAppear(animated)
         
-        motionManager.delegate = self
-        motionManager.proob()
+        
+        
         print(self.pitchValue)
         print(self.yawValue)
         print(self.rollValue)
@@ -40,6 +40,7 @@ class CronoViewController: UIViewController {
         super.viewDidLoad()
         //
         cronoManager.delegate = self
+        motionManager.delegate = self
         circularView.minimumValue = 0.0
         circularView.maximumValue = 1.0
         circularView.endPointValue = 0.5
@@ -69,10 +70,15 @@ extension CronoViewController : CronoManagerDelegate{
     
     @IBAction func selectMode(_ sender: UIButton) {
         
+        
         circularView.endPointValue = 0
         minuteLabel.text = "00"
         secondLabel.text = "00"
         cronoManager.start(numTag: sender.tag)
+        motionManager.proob()
+        motionManager.stop()
+    
+       
         
     }
     

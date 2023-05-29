@@ -19,10 +19,10 @@ class CronoManager{
    
     let secondsPerMinute = 60
     let totalTime : Int = 10
-    var lastTime : Int = 0
+    var lastTime : Int = 1
     
     var minuteText = "00"
-    var secondText = "00"
+    var secondText = "01"
     var endPoint : CGFloat = 0
     
     func start(numTag : Int){
@@ -36,7 +36,7 @@ class CronoManager{
             minuteText = "00"
             secondText = "00"
             endPoint = 0
-            lastTime = 0
+            lastTime = 1
         }
     }
     
@@ -82,7 +82,7 @@ class CronoManager{
                 endPoint = 1
                 minuteText = "00"
                 secondText = "00"
-                lastTime = 0
+                lastTime = 1
             }
             
         let cronoModel = CronoModel(endPoint: endPoint, minutesString: minuteText, secondsString: secondText)
