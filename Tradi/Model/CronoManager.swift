@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol CronoManagerDelegate {
-
+    
     func didUpdateCrono(_ cronoManager: CronoManager, cronoModel: CronoModel)
     
 }
@@ -17,8 +17,8 @@ protocol CronoManagerDelegate {
 class CronoManager{
     
     var delegate : CronoManagerDelegate?
-    var timer = Timer()
-   
+    
+    var cronoModel = CronoModel(endPoint: 0, minutesString: "00", secondsString: "01")
     let secondsPerMinute = 60
     let totalTime : Int = 10
     var lastTime : Int = 1
@@ -26,26 +26,8 @@ class CronoManager{
     var secondText = "01"
     var endPoint : CGFloat = 0
     
-    func start(numTag : Int){
-        
-        if numTag == 0{
-            
-            timer.invalidate()
-            
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-            print("numtagok")
-        } else{
-            timer.invalidate()
-            minuteText = "00"
-            secondText = "00"
-            endPoint = 0
-            lastTime = 1
-        }
-        print("startok")
-    }
     
-   
-    @objc func updateCounter() {
+    func start() {
         print("ok krono")
         var minutes : Int = 0
         var seconds : Int = 0
@@ -78,30 +60,30 @@ class CronoManager{
                     minuteText = "0\(minutes)"
                 }else{
                     minuteText = String(minutes)
-                    }
-                   
                 }
-                lastTime += 1
                 
-            }else{
-                timer.invalidate()
-                endPoint = 1
-                minuteText = "00"
-                secondText = "00"
-                lastTime = 1
             }
+            lastTime += 1
             
-        let cronoModel = CronoModel(endPoint: endPoint, minutesString: minuteText, secondsString: secondText)
-            self.delegate?.didUpdateCrono(self, cronoModel: cronoModel)
-     
+        }else{
+            
+            endPoint = 1
+            minuteText = "00"
+            secondText = "00"
+            lastTime = 1
+        }
+        
+        cronoModel = CronoModel(endPoint: endPoint, minutesString: minuteText, secondsString: secondText)
+        self.delegate?.didUpdateCrono(self, cronoModel: cronoModel)
+        
     }
     
     func progress(){
         
-            let  percent = Float(lastTime) / Float(totalTime)
-            endPoint = CGFloat(percent)
+        let  percent = Float(lastTime) / Float(totalTime)
+        endPoint = CGFloat(percent)
         
     }
     
-  
+    
 }

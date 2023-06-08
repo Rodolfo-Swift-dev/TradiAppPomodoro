@@ -13,30 +13,28 @@ protocol CronoMotionManagerDelegate {
     
 }
 
-class CronoMotionManager  {
+class CronoMotionManager : CronoManager  {
     
-    var delegate : CronoMotionManagerDelegate?
+    var delegated : CronoMotionManagerDelegate?
     var motionManager = MotionManager()
-    var cronoManager = CronoManager()
     var motionModel = MotionModel(data : Data(pitch: 0.0, yaw: 0.0, row: 0.0))
-    var cronoModel = CronoModel(endPoint: 0, minutesString: "00", secondsString: "01")
-    
     var timer = Timer()
-
+    
     func startCrono(){
         
-        cronoManager.delegate = self
         motionManager.delegate = self
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCronoMotion), userInfo: nil, repeats: true)
+        
     }
     
     @objc func updateCronoMotion (){
-        cronoManager.start(numTag: 0)
+        
         motionManager.proob()
-        self.delegate?.didUpdate(self, response: cronoModel)
+        start()
+        print(self.cronoModel.secondsString)
+        self.delegated?.didUpdate(self, response: cronoModel)
         
     }
-   
 }
 
 
@@ -61,17 +59,8 @@ extension CronoMotionManager : MotionManagerDelegate{
 }
 
 
-//MARK: -  Extension CronoManagerDelegate
-extension CronoMotionManager : CronoManagerDelegate{
-    func didUpdateCrono(_ cronoManager: CronoManager, cronoModel: CronoModel) {
-       
-        DispatchQueue.main.async {
-            self.cronoModel = cronoModel
-            
-            print(self.cronoModel.secondsString)
-        }
-    }  
-}
+
+
 
 
 

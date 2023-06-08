@@ -10,7 +10,6 @@ import HGCircularSlider
 import CoreMotion
 
 class CronoViewController: UIViewController {
-
     
     var cronoMotionManager = CronoMotionManager()
     var gyroscopeManager = GyroscopeManager()
@@ -23,19 +22,25 @@ class CronoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
-      
+        AppUtility.lockOrinetation(.portrait)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppUtility.lockOrinetation(.all)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //
         
-        cronoMotionManager.delegate = self
+        cronoMotionManager.delegated = self
         gyroscopeManager.delegate = self
         circularView.minimumValue = 0.0
         circularView.maximumValue = 1.0
         circularView.endPointValue = 0.5
-       
+        
     }
 }
 
@@ -48,7 +53,7 @@ extension CronoViewController : CronoMotionManagerDelegate {
         minuteLabel.text = "00"
         secondLabel.text = "00"
         cronoMotionManager.startCrono()
-      
+        
         
         //gyroscopeManager.startGyroscopeUpdate()
         //gyroscopeManager.stop()
