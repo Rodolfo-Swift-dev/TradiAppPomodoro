@@ -52,8 +52,12 @@ extension CronoViewController : CronoMotionManagerDelegate {
         circularView.endPointValue = 0
         minuteLabel.text = "00"
         secondLabel.text = "00"
-        cronoMotionManager.startCrono()
         
+        if sender.tag == 0{
+            cronoMotionManager.startCronoMotion()
+        }else {
+            cronoMotionManager.stopCronoMotion()
+        }
         
         //gyroscopeManager.startGyroscopeUpdate()
         //gyroscopeManager.stop()

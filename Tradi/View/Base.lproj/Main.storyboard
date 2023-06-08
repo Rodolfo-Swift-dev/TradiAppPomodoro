@@ -336,8 +336,8 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8z-Ky-x15">
                                                                 <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="88.333333333333329"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EASY!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJy-ey-FbM">
-                                                                        <rect key="frame" x="11.333333333333314" y="9.9999999999999982" width="49" height="20.333333333333329"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJy-ey-FbM">
+                                                                        <rect key="frame" x="6.3333333333333144" y="9.9999999999999982" width="59" height="20.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -351,8 +351,8 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOq-z0-WZi">
                                                                 <rect key="frame" x="71.666666666666657" y="0.0" width="71.666666666666657" height="88.333333333333329"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HARD!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-R3-hHm">
-                                                                        <rect key="frame" x="9.3333333333333428" y="9.9999999999999982" width="53" height="20.333333333333329"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOP!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-R3-hHm">
+                                                                        <rect key="frame" x="11" y="9.9999999999999982" width="50" height="20.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>

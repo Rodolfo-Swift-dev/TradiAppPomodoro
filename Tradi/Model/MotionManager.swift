@@ -20,7 +20,7 @@ class MotionManager{
     let motionManager = CMMotionManager()
     let motionQuehue = OperationQueue()
     
-    func proob() {
+    func startMotion() {
         
         motionManager.startDeviceMotionUpdates ( to: motionQuehue ) { (data :  CMDeviceMotion?, error : Error?) in
             guard let data = data else{
@@ -30,20 +30,20 @@ class MotionManager{
             }
             
             let motionModel = MotionModel(data: Data(pitch: data.attitude.pitch, yaw: data.attitude.yaw, row: data.attitude.roll))
+            
+            
+            
                 // Aquí se procesa el motionData o se realiza cualquier otra acción necesaria
             self.motionManager.deviceMotionUpdateInterval = 1
+            print(motionModel.data.condition)
             self.delegate?.didUpdateMotion(self, motion : motionModel)
                 
-            
         }
     }
     // Detener las actualizaciones después de 3 segundos
-    func stop(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+    func stopMotion(){
+        DispatchQueue.main.async() {
             self.motionManager.stopDeviceMotionUpdates()
         }
     }
-    
-    
-   
 }

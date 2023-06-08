@@ -16,6 +16,16 @@ struct Data {
     let pitch : Double
     let yaw : Double
     let row : Double
+    
+    var condition : Bool{
+       
+        switch abs(row){
+        case 2...4:
+            return true
+        default:
+            return false
+        }
+    }
     init(pitch: Double, yaw: Double, row: Double) {
         self.pitch = pitch
         self.yaw = yaw

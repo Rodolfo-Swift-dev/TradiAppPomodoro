@@ -20,20 +20,51 @@ class CronoMotionManager : CronoManager  {
     var motionModel = MotionModel(data : Data(pitch: 0.0, yaw: 0.0, row: 0.0))
     var timer = Timer()
     
-    func startCrono(){
-        
+    func startCronoMotion(){
+       
         motionManager.delegate = self
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCronoMotion), userInfo: nil, repeats: true)
+        timer.invalidate()
+        lastTime  = 1
+        minuteText = "00"
+        secondText = "00"
+        endPoint  = 0
         
+        
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCronoMotion), userInfo: nil, repeats: true)
+            
     }
     
     @objc func updateCronoMotion (){
+        print(self.lastTime)
+        if lastTime == 1{
+            motionManager.startMotion()
+            startCrono()
+        }else if lastTime != totalTime, motionModel.data.condition == false{
+            motionManager.startMotion()
+            startCrono()
+            
+        }else if lastTime != totalTime, motionModel.data.condition == true {
+           
+                self.stopCronoMotion()
+               
+            print(totalTime)
+            
+            
+           
+        }else if lastTime == totalTime{
+
+           stopCronoMotion()
+            
+        }
         
-        motionManager.proob()
-        start()
-        print(self.cronoModel.secondsString)
         self.delegated?.didUpdate(self, response: cronoModel)
         
+    }
+    
+    func stopCronoMotion(){
+        timer.invalidate()
+        motionManager.stopMotion()
+        stopCrono()
     }
 }
 
@@ -45,10 +76,8 @@ extension CronoMotionManager : MotionManagerDelegate{
         DispatchQueue.main.async {
             
             self.motionModel = motion
-            print(self.motionModel.data.pitch)
+           
             print(self.motionModel.data.row)
-            print(self.motionModel.data.yaw)
-            print("ok")
             
         }
     }
