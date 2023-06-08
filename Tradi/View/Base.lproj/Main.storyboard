@@ -421,6 +421,9 @@
             <point key="canvasLocation" x="-597.20930232558135" y="90.772532188841211"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="z8u-HB-bim"/>
+    </designables>
     <resources>
         <image name="2" width="333.33334350585938" height="333.33334350585938"/>
         <image name="figure.run.circle.fill" catalog="system" width="128" height="123"/>

@@ -9,7 +9,6 @@ import Foundation
 
 struct CronoMotionModel {
     
-    var cronoModel : CronoModel
     var motionModel : MotionModel
     
 }

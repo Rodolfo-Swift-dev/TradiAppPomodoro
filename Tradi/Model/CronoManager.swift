@@ -9,9 +9,11 @@ import Foundation
 
 
 protocol CronoManagerDelegate {
+
     func didUpdateCrono(_ cronoManager: CronoManager, cronoModel: CronoModel)
     
 }
+
 class CronoManager{
     
     var delegate : CronoManagerDelegate?
@@ -20,7 +22,6 @@ class CronoManager{
     let secondsPerMinute = 60
     let totalTime : Int = 10
     var lastTime : Int = 1
-    
     var minuteText = "00"
     var secondText = "01"
     var endPoint : CGFloat = 0
@@ -28,9 +29,11 @@ class CronoManager{
     func start(numTag : Int){
         
         if numTag == 0{
+            
             timer.invalidate()
             
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+            print("numtagok")
         } else{
             timer.invalidate()
             minuteText = "00"
@@ -38,14 +41,17 @@ class CronoManager{
             endPoint = 0
             lastTime = 1
         }
+        print("startok")
     }
     
    
     @objc func updateCounter() {
-        
+        print("ok krono")
         var minutes : Int = 0
         var seconds : Int = 0
+        
         progress()
+        
         //example functionality
         if  lastTime != totalTime {
             
@@ -87,7 +93,7 @@ class CronoManager{
             
         let cronoModel = CronoModel(endPoint: endPoint, minutesString: minuteText, secondsString: secondText)
             self.delegate?.didUpdateCrono(self, cronoModel: cronoModel)
-        
+     
     }
     
     func progress(){

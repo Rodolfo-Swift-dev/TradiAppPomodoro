@@ -10,6 +10,8 @@
 		76CE0339BCD1DE0807E9B327 /* Pods_Tradi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC7FE7DC96F373F90E88DD2 /* Pods_Tradi.framework */; };
 		BC2F603129EDEC1400B8D164 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F603029EDEC1400B8D164 /* AppUtility.swift */; };
 		BC2F603329EDF1BA00B8D164 /* 116177-time-tracker.json in Resources */ = {isa = PBXBuildFile; fileRef = BC2F603229EDF1BA00B8D164 /* 116177-time-tracker.json */; };
+		BC36C1342A2FC35200D61173 /* GyroscopeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC36C1332A2FC35200D61173 /* GyroscopeManager.swift */; };
+		BC36C1362A2FCA3B00D61173 /* GyroscopeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC36C1352A2FCA3B00D61173 /* GyroscopeModel.swift */; };
 		BC3828662A253E7500AED126 /* CronoMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3828652A253E7500AED126 /* CronoMotionManager.swift */; };
 		BC75DBC429F2422A00927CFE /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75DBC329F2422A00927CFE /* MotionManager.swift */; };
 		BC7FDAD229E92BA800F2E41B /* CronoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7FDAD129E92BA800F2E41B /* CronoViewController.swift */; };
@@ -30,6 +32,8 @@
 		BAC7FE7DC96F373F90E88DD2 /* Pods_Tradi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2F603029EDEC1400B8D164 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		BC2F603229EDF1BA00B8D164 /* 116177-time-tracker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "116177-time-tracker.json"; sourceTree = "<group>"; };
+		BC36C1332A2FC35200D61173 /* GyroscopeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeManager.swift; sourceTree = "<group>"; };
+		BC36C1352A2FCA3B00D61173 /* GyroscopeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeModel.swift; sourceTree = "<group>"; };
 		BC3828652A253E7500AED126 /* CronoMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoMotionManager.swift; sourceTree = "<group>"; };
 		BC75DBC329F2422A00927CFE /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		BC7FDAD129E92BA800F2E41B /* CronoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CronoViewController.swift; sourceTree = "<group>"; };
@@ -81,11 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				BC2F603029EDEC1400B8D164 /* AppUtility.swift */,
+				BC36C1332A2FC35200D61173 /* GyroscopeManager.swift */,
+				BC36C1352A2FCA3B00D61173 /* GyroscopeModel.swift */,
 				BC75DBC329F2422A00927CFE /* MotionManager.swift */,
-				BCE39FC62A1E67A500B72A95 /* CronoManager.swift */,
-				BC3828652A253E7500AED126 /* CronoMotionManager.swift */,
 				BCF0E7DD29F422A9000FFC38 /* MotionModel.swift */,
+				BCE39FC62A1E67A500B72A95 /* CronoManager.swift */,
 				BCE39FC82A1E750300B72A95 /* CronoModel.swift */,
+				BC3828652A253E7500AED126 /* CronoMotionManager.swift */,
 				BCD7361B2A2560AB00D9E1C8 /* CronoMotionModel.swift */,
 			);
 			path = Model;
@@ -267,8 +273,10 @@
 				BCE39FC92A1E750300B72A95 /* CronoModel.swift in Sources */,
 				BC2F603129EDEC1400B8D164 /* AppUtility.swift in Sources */,
 				BC75DBC429F2422A00927CFE /* MotionManager.swift in Sources */,
+				BC36C1342A2FC35200D61173 /* GyroscopeManager.swift in Sources */,
 				BC7FDAD229E92BA800F2E41B /* CronoViewController.swift in Sources */,
 				BCB5D82429E6296F00AE5E8B /* SceneDelegate.swift in Sources */,
+				BC36C1362A2FCA3B00D61173 /* GyroscopeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
